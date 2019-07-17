@@ -1,0 +1,52 @@
+@import "../../styles";
+
+.title-row {
+  background-color: $blue-banner;
+  color: $background-white;
+  height: 12vh;
+}
+
+.title {
+  margin-left: 1%;
+}
+
+.title-text {
+  font-size: 3em;
+  font-weight: bolder;
+  font-family: 'Cinzel', serif;
+}
+
+.page-title {
+  font-family: 'Lato', serif;
+  font-size: 2em;
+}
+
+.logo-img {
+  height: auto;
+  float: left;
+  display: block;
+}
+
+
+
+@include media-breakpoint-down (md) {
+  @keyframes double-menu-bar-height {
+    0% {
+      height: 12vh;
+    }
+    100% {
+      height: 24vh;
+    }
+  }
+
+  .title-row {
+    animation: double-menu-bar-height 500ms linear ;
+    animation-fill-mode: forwards;
+  }
+
+  .page-title {
+    font-family: 'Lato', serif;
+    font-size: 1.5em;
+  }
+
+}

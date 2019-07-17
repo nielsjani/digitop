@@ -1,0 +1,78 @@
+@import "../../styles";
+
+.game-cover {
+  display: block;
+  //% of a col-6 in a col-3
+  max-width:100%;
+  width: auto;
+  height: auto;
+}
+
+.game-cover-play {
+  display: block;
+  //% of a col-6 in a col-3
+  max-width:100%;
+  width: auto;
+  height: auto;
+  cursor: pointer;
+}
+
+.category-list {
+  font-size: 11px;
+  padding-right: 5px;
+}
+
+.game-title {
+  font-size: 1.4em;
+  color: $background-white;
+  margin: 0 auto 0 auto;
+}
+
+.game-category {
+  padding: 1px;
+  background-color: $background-white;
+  margin: 2px;
+  text-decoration: underline;
+}
+
+.game-card {
+  background-color: $light-blue;
+  max-width: 95%;
+  border-radius: 15px;
+  border: $dark-blue 3px solid;
+}
+
+@keyframes bounce {
+  0% {
+    top: 10px;
+  }
+  12.5% {
+    top: 0;
+  }
+  25% {
+    top: 10px;
+  }
+  37.5% {
+    top: 0;
+  }
+  50% {
+    top: 10px;
+  }
+  100% {
+    top: 10px;
+  }
+}
+
+.new-box {
+  top: 10px;
+  right: 25px;
+  position: absolute;
+  font-size: 0.9em;
+  padding: 2px;
+  background-color: $dt-orange;
+  color: $background-white;
+  font-weight: bolder;
+  border: $background-white 2px solid;
+  border-radius: 5px;
+  animation: bounce 1500ms linear infinite;
+}

@@ -1,0 +1,22 @@
+@import "../styles";
+
+.site-body {
+  background-color: #F7F7FF;
+  font-family: 'Lato', serif;
+}
+
+.max-vh {
+  height: 88vh;
+}
+
+
+@include media-breakpoint-down (md) {
+  .max-vh {
+    height: 76vh;
+  }
+
+
+}
+
+
+//https://coolors.co/1a8dff-173753-6daedb-1b4353-1d70a2

@@ -1,0 +1,56 @@
+<div class="row mt-3 justify-content-center no-gutters">
+  <div class="col-md-4 col-sm-5 pb-3" align="center"
+       *ngFor="let game of games">
+    <div class="pb-3 row game-card">
+
+      <h3 class="game-title mb-2">{{game.name}}</h3>
+      <p class="new-box" *ngIf="game.new">NEW!</p>
+
+      <div class="row no-gutters">
+
+        <div class="col-4 mt-5">
+          <img src="../../assets/icons/pawn.svg"/>
+          <img src="../../assets/icons/pawn.svg"/>
+          <img src="../../assets/icons/pawn-dark.svg"/>
+          <img src="../../assets/icons/pawn-dark.svg"/>
+          <img src="../../assets/icons/pawn-dark.svg"/>
+
+          <br/>
+
+          <svg height="60" width="60" class="mt-3">
+            <circle fill="#173753" stroke-width="1" r="25" cx="30" cy="30" stroke-dashoffset="0"></circle>
+            <line stroke="#f2f2f2" x1="30" y1="30" x2="30" y2="8" stroke-width="2"></line>
+            <line stroke="#f2f2f2" x1="30" y1="30" x2="40" y2="40" stroke-width="2"></line>
+          </svg>
+          <p class="text-center color-white">10'</p>
+        </div>
+
+        <div class="col-4"
+             [routerLink]="['/start', game.id]"
+             (mouseleave)="setHovering(undefined)"
+             (mouseover)="setHovering(game)">
+          <img src="../../assets/game-covers/spookuur.jpg"
+               class="game-cover"
+               *ngIf="!hoveringOver(game)">
+          <img src="../../assets/icons/play.svg"
+               class="game-cover-play"
+               *ngIf="hoveringOver(game)">
+        </div>
+
+        <div class="col-4">
+          <div class="row no-gutters category-list ml-2 mt-5">
+            <a href="#" class="col game-category ">Bluffing</a>
+            <a href="#" class="col game-category ">Card game</a>
+            <a href="#" class="col game-category ">Math</a>
+            <a href="#" class="col game-category ">Hand management</a>
+            <a href="#" class="col game-category ">Press your luck</a>
+            <a href="#" class="col game-category">Take that</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>

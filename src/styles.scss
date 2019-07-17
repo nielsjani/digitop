@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/scss/bootstrap';
+
+@import url('https://fonts.googleapis.com/css?family=Cinzel');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+@import "~bootstrap/scss/_functions.scss";
+@import "~bootstrap/scss/_variables.scss";
+@import "~bootstrap/scss/mixins/_breakpoints.scss";
+
+$dark-blue: #173753;
+$light-blue: #6DAEDB;
+$blue-banner: #1a8dff;
+$background-white: #f2f2f2;
+$dt-orange: #F79824;
+
+.color-white {
+  color: $background-white
+}
